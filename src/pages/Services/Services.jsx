@@ -45,8 +45,7 @@ const Services = () => {
           <ServiceCard
             icon="fa-solid fa-dumbbell"
             title="health caring"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Believe in the power of your own strength. With dedication and perseverance, there’s nothing you can’t achieve. Your fitness journey starts now."
             path="/services"
             content="Discover more About us"
           ></ServiceCard>
@@ -54,16 +53,14 @@ const Services = () => {
             icon="fa-solid fa-dumbbell"
             title="QUALITY EQUIPMENT"
             status="active"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Experience the difference that premium equipment makes. At our gym, we invest in the best so you can focus on what matters most: your health and fitness."
             path="/services"
             content="Discover more About us"
           ></ServiceCard>
           <ServiceCard
             icon="fa-solid fa-dumbbell"
             title="gym strategies"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Our gym’s success strategy is built on three pillars: innovation, motivation, and dedication. We continuously update our methods to provide you with the best tools and support to reach your fitness goals."
             path="/services"
             content="Discover more About us"
           ></ServiceCard>

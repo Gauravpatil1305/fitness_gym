@@ -69,27 +69,35 @@ const Contact = () => {
             <Icon IconName="fa-solid fa-house" color="gray" size="xl" />
 
             <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">Buttonwood, California.</h3>
-              <p className="text-[#8a8a8a]">Rosemead, CA 91770</p>
+              <h3 className="text-xl">Shegaon Maharastra.</h3>
+              <p className="text-[#8a8a8a]">Aanand Vihar, wing 8 floor first</p>
             </div>
           </div>
-          <div className="flex items-center">
-            <Icon IconName="fa-solid fa-phone" color="gray" size="xl" />
-            <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">+1 253 565 2365</h3>
-              <p className="text-[#8a8a8a]">Mon to Fri 9am to 6pm</p>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <Icon IconName="fa-solid fa-envelope" color="gray" size="xl" />
-            <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">fitnessone@gmail.com</h3>
-              <p className="text-[#8a8a8a]">Send us your query anytime!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <div className="flex flex-col items-start">
+  <div className="flex items-center mb-4">
+    <Icon IconName="fa-solid fa-phone" color="gray" size="xl" />
+    <div className="leading-none mx-4">
+      <a href="tel:+917499511318">
+        <h3 className="text-xl">+91 7499511318</h3>
+      </a>
+      <p className="text-[#8a8a8a]">Mon to sat 9am to 6pm</p><br></br>
     </div>
+  </div>
+  <div className="flex items-center">
+    <Icon IconName="fa-solid fa-envelope" color="gray" size="xl" />
+    <div className="leading-none mx-4">
+      <a href="mailto:fitnessclub@gmail.com">
+        <h3 className="text-xl">fitnessclub@gmail.com</h3>
+      </a>
+      <p className="text-[#8a8a8a]">Send us your query anytime!</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+      </div>
+    
+    
   );
 };
 

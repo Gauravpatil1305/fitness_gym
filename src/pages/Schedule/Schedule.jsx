@@ -35,37 +35,37 @@ const Schedule = () => {
           <ul className="bg-sky px-4 py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:px-20 gap-4">
             <li className="px-6 py-6 text-[24px]  text-center  ">
               <div>
-                <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
+                <h5 className="bg-black text-white px-4 py-2">10am-11am</h5>
                 <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jhon Doe</p>
+                <p>by Jack</p>
               </div>
             </li>
             <li className="px-6 py-6 text-[24px]  text-center bg-main ">
               <div className="text-white">
                 <h5 className="bg-white text-black px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jhon Doe</p>
+                <h2 className="text-[30px]">Zumba Class</h2>
+                <p>by Ana de Armas</p>
               </div>
             </li>
             <li className="px-6 py-6 text-[24px]  text-center  ">
               <div>
                 <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jhon Doe</p>
+                <h2 className="text-[30px]">Stretching</h2>
+                <p>by Gaurav</p>
               </div>
             </li>
             <li className="px-6 py-6 text-[24px]  text-center  ">
               <div>
                 <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jhon Doe</p>
+                <h2 className="text-[30px]">Medition</h2>
+                <p>by Ramkrishna Yadav</p>
               </div>
             </li>
             <li className="px-6 py-6 text-[24px]  text-center  ">
               <div>
                 <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jhon Doe</p>
+                <h2 className="text-[30px]">Personal Training</h2>
+                <p>by John</p>
               </div>
             </li>
           </ul>

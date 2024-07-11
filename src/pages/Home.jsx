@@ -29,19 +29,19 @@ const Home = () => {
   // Testimonials
   const testimonials = [
     {
-      name: "Sarah Turner",
+      name: "Gaurav Patil",
       feedback:
         "I love this gym! The trainers are knowledgeable and motivating, the equipment is top-notch, and the atmosphere is always welcoming. I've seen fantastic results since I joined.",
       title: " Fitness Enthusiast",
     },
     {
-      name: "David Rodriguez",
+      name: "Prakash Patidar",
       feedback:
         "I've been a member of this gym for a year, and I couldn't be happier. The cleanliness and hygiene standards are excellent, and the staff is friendly and helpful.",
       title: "Loyal Member",
     },
     {
-      name: "Emily Foster",
+      name: "Mansi sharma",
       feedback:
         "The group fitness classes at this gym are outstanding. The instructors are passionate and energetic, and the variety of classes keeps me engaged and motivated to work out regularly. ",
       title: "Group Fitness Fanatic",
@@ -75,7 +75,7 @@ const Home = () => {
         <div className="px-4 md:px-10">
           <div className="flex items-center">
             <div className="h-[2px] w-[100px] bg-main"></div>
-            <SubHead color="white" title="With Patric Potter" />
+            <SubHead color="white" title="With Our trainer" />
           </div>
           <h2
             className="text-white text-extraLarge md:text-[50px] md:leading-none md:w-[80%] xl:w-[70%] font-bold uppercase py-16"
@@ -169,8 +169,7 @@ const Home = () => {
           <ServiceCard
             icon="fa-solid fa-notes-medical"
             title="health caring"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Believe in the power of your own strength. With dedication and perseverance, there’s nothing you can’t achieve. Your fitness journey starts now"
             path="/services"
             content="Discover more About us"
           ></ServiceCard>
@@ -178,16 +177,14 @@ const Home = () => {
             icon="fa-solid fa-dumbbell"
             title="QUALITY EQUIPMENT"
             status="active"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Experience the difference that premium equipment makes. At our gym, we invest in the best so you can focus on what matters most: your health and fitness."
             path="/services"
             content="Discover more About us"
           ></ServiceCard>
           <ServiceCard
             icon="fa-regular fa-chess-rook"
             title="gym strategies"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            description="Our gym’s success strategy is built on three pillars: innovation, motivation, and dedication. We continuously update our methods to provide you with the best tools and support to reach your fitness goals."
             path="/services"
             content="Discover more About us"
           ></ServiceCard>
@@ -306,17 +303,17 @@ const Home = () => {
         </div>
         <div className="md:flex justify-around">
           <TrainnerCard
-            name="Michael Johnson"
+            name="The Rock"
             title="Certified Fitness Coach"
             image={team1}
           ></TrainnerCard>
           <TrainnerCard
-            name="John Davis"
+            name="Vin Diesel"
             title="Strength and Conditioning Specialist"
             image={team2}
           ></TrainnerCard>
           <TrainnerCard
-            name="David Martinez"
+            name="Tom Cruise"
             title="Personal Trainer and Nutrition Expert"
             image={team3}
           ></TrainnerCard>

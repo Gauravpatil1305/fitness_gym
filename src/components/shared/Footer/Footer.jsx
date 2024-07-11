@@ -17,7 +17,7 @@ const Footer = () => {
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="mx-4 my-10">
-            <h2 className={footerHead}>COMPANY</h2>
+            <h2 className={footerHead}>SITEMAP</h2>
             <ul className="mt-10">
               <li className={footerList}>
                 <Link to="/about">About Us</Link>
@@ -29,16 +29,16 @@ const Footer = () => {
                 <Link to="/">Contact</Link>
               </li>
               <li className={footerList}>
-                <Link to="/">Company</Link>
+                <Link to="/">Home</Link>
               </li>
             </ul>
           </div>
           <div className="mx-4 my-10">
             <h2 className={footerHead}>OPEN HOUR</h2>
             <ul className="mt-10">
-              <li className={footerList}>Monda-Thursday (11am-7pm)</li>
+              <li className={footerList}>Monda-Friday (5am-11pm & 5pm-10pm)</li>
               <li className={footerList}>Sunday (close)</li>
-              <li className={footerList}>Saturday (11am-7pm)</li>
+              
             </ul>
           </div>
           <div className="mx-4 my-10">
@@ -46,15 +46,14 @@ const Footer = () => {
             <ul className="mt-10">
               <li className={footerList}>Protien Insurance</li>
               <li className={footerList}>Trainners</li>
-              <li className={footerList}>Car</li>
+              <li className={footerList}></li>
             </ul>
           </div>
           <div className="mx-4 my-10">
             <img src={footerLogo} alt="" />
             <p className="font-[14px] text-gray my-10">
               {" "}
-              GThe trade war currently ensuing between te US anfd several
-              natxions around thdhe globe, most fiercely with.
+              Fitness for Everyone – Experience the Difference at [Fitness Club]
             </p>
             <div className="flex  space-x-4">
               <a
@@ -85,12 +84,13 @@ const Footer = () => {
               >
                 <FaGlobe className="text-gray text-[1.3rem] hover:text-main" />
               </a>
+
             </div>
           </div>
         </div>
         <div className="my-10  border-t-2 border-gray">
           <p className="text-gray text-center p-4">
-            Copyright &copy; All rights reserved by fitness one
+          Copyright © 2024 Prabisha Consulting Limited. All Rights Reserved
           </p>
         </div>
       </div>
