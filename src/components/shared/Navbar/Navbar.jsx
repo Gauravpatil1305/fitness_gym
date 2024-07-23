@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className="flex items-center justify-between mx-2 sm:mx-6 md:mx-10  lg:hidden ">
         <Link to="/">
-          <img src={logo} alt="Fitness one Logo" />
+          <img src={logo} alt="Fitness Logo" />
         </Link>
         <div className="mx-4">
           {mobileMenu ? (
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between lg:mx-10 xl:mx-20  ">
           <div>
             <Link to="/">
-              <img src={logo} alt="Fitness one Logo" />
+              <img src={logo} alt="Fitness Logo" />
             </Link>
           </div>
           <div className="flex items-center ">
