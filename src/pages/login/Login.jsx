@@ -2,23 +2,23 @@ import React, { useEffect } from "react";
 import sideImage from "../../assets/gallery/contact_form.png";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { useLoggedInUserMutation } from "../../redux/api/auth/authApi";
-import { isLoggedUser, storeUserInfo } from "../../service/storeUserInfo";
+import { isLoggedUser, storeUserInfo , getUserInfo } from "../../service/storeUserInfo";
 import Button from "../../components/Buttons/Button";
 import toast from "react-hot-toast";
+import axios from "axios";
+const PORT = import.meta.env.VITE_BACKEND_PORT
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const [loggedInUser, { isLoading, isError }] = useLoggedInUserMutation();
 
   // React hook form
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
     try {
-      const response = await loggedInUser({ ...data }).unwrap();
+      const response = await axios.post(`${PORT}/api/login`, data);
 
-      storeUserInfo(response.jwtTocken);
+      storeUserInfo(response.data.jwtToken);
       toast.success("Login succeeded");
       if (response) {
         navigate("/dashboard");

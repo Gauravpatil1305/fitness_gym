@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from "react";
 import sideImage from "../../assets/gallery/blog1.png";
+import axios from "axios";
 import { set, useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserMutation } from "../../redux/api/auth/authApi";
 import Button from "../../components/Buttons/Button";
 import toast from "react-hot-toast";
+const PORT = import.meta.env.VITE_BACKEND_PORT
+
+
+
 
 const SignUp = () => {
+
+  console.log(PORT)
   const navigate = useNavigate();
 
-  const [createUser, { isLoading, isError }] = useCreateUserMutation();
 
   // React hook from
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
     try {
-      const response = await createUser(data).unwrap();
-      if (response) {
+      const response = await axios.post(`${PORT}/api/register`, data);
+      console.log(response);
+      if (response.data.success) {
         console.log("User Created Successfully");
         toast.success("Sign Up succeeded");
 
@@ -52,11 +58,11 @@ const SignUp = () => {
         <form className="mx-4" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
-            placeholder="Enter your Full Name"
+            placeholder="Enter your username"
             className={inputDesign}
             name=""
             id="Name"
-            {...register("fullName", { required: true })}
+            {...register("username", { required: true })}
           />
           <input
             type="email"

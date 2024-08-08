@@ -4,18 +4,18 @@ export const extendedApiSlice = apiSlice.injectEndpoints({
   endpoints: (build) => ({
     loggedInUser: build.mutation({
       query: (loginData) => ({
-        url: "/auth/login",
+        url: "/api/login",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         data: loginData,
-      }),
+      }), 
       invalidatesTags: ["user"],
     }),
     createUser: build.mutation({
       query: (data) => ({
-        url: "/auth/register",
+        url: "/api/register",
         method: "POST",
         headers: {
           "Content-Type": "application/json", 

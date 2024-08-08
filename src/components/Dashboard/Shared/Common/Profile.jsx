@@ -12,6 +12,7 @@ import { setUser } from "../../../../redux/features/user/userSlice";
 const Profile = () => {
   // user data
   const user = getUserInfo();
+  console.log(user)
 
   // User information
   const { data, error, isLoading } = useCurrentUserQuery(user?.id);
@@ -30,7 +31,7 @@ const Profile = () => {
       {!isLoading && (
         <div>
           <PageHead
-            title={`Wellcome Back, ${data?.user?.fullName} `}
+            title={`Wellcome Back, ${user?.username} `}
           ></PageHead>
           <div className="bg-white text-black px-4 py-6 flex items-center">
             <div className="w-10/12">
@@ -38,15 +39,15 @@ const Profile = () => {
               <div>
                 <div className="text-[20px] flex my-4">
                   <p className="w-[100px] font-semibold">ID</p>
-                  <span>: {data?.user?.id}</span>
+                  <span>: {user?.user_id}</span>
                 </div>
                 <div className="text-[20px] flex my-4">
                   <p className="w-[100px] font-semibold">Name</p>
-                  <span>: {data?.user?.fullName} </span>
+                  <span>: {user?.username} </span>
                 </div>
                 <div className="text-[20px] flex my-4">
                   <p className="w-[100px] font-semibold">Email</p>
-                  <span>: {data?.user?.email}</span>
+                  <span>: {user?.email}</span>
                 </div>
               </div>
               <div>
