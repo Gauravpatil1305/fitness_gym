@@ -52,7 +52,7 @@ const SignUp = () => {
             className="text-white text-extraLarge  font-bold uppercase py-6 text-center"
             style={{ fontFamily: "'Teko', sans-serif" }}
           >
-            Wellcome to Fitness one
+            Welcome to Fitness one
           </h2>
         </div>
         <form className="mx-4" onSubmit={handleSubmit(onSubmit)}>

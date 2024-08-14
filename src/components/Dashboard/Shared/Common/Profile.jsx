@@ -12,7 +12,6 @@ import { setUser } from "../../../../redux/features/user/userSlice";
 const Profile = () => {
   // user data
   const user = getUserInfo();
-  console.log(user)
 
   // User information
   const { data, error, isLoading } = useCurrentUserQuery(user?.id);
@@ -31,7 +30,7 @@ const Profile = () => {
       {!isLoading && (
         <div>
           <PageHead
-            title={`Wellcome Back, ${user?.username} `}
+            title={`Welcome Back, ${user?.username} `}
           ></PageHead>
           <div className="bg-white text-black px-4 py-6 flex items-center">
             <div className="w-10/12">

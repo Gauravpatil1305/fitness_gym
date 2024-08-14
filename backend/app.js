@@ -5,12 +5,12 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const globalConfig = require("./config");
 const { v4: uuidv4 } = require("uuid");
-const authRouter = require("./router/auth")
-const productRouter  = require("./router/product")
 const serverLink = globalConfig.port;
 const domain = globalConfig.domain;
 const app = express();
 const port = 8450;
+const authRouter = require("./router/auth")
+const mealRouter = require("./router/meal")
  
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,8 +44,7 @@ app.get("/"),async (req, res) => {
   };
 
 app.use('/api', authRouter);
-
-app.use('/api', productRouter);
+app.use('/api', mealRouter);
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);

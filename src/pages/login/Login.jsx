@@ -55,7 +55,7 @@ const Login = () => {
             className="text-white text-extraLarge  font-bold uppercase py-6 text-center"
             style={{ fontFamily: "'Teko', sans-serif" }}
           >
-            Wellcome back
+            Welcome back
           </h2>
         </div>
         <form className="mx-4" onSubmit={handleSubmit(onSubmit)}>

@@ -7,7 +7,6 @@ import { useDispatch } from "react-redux";
 const DashboardHomePage = () => {
   // User
   const user = getUserInfo();
-  console.log(user);
 
   // navigate
   const navigation = useNavigate();
@@ -23,7 +22,7 @@ const DashboardHomePage = () => {
 
   return (
     <div>
-      <PageHead title={`Wellcome Back, ${user?.username} `}></PageHead>
+      <PageHead title={`Welcome Back, ${user?.username} `}></PageHead>
     </div>
   );
 };
