@@ -143,7 +143,7 @@ const ViewUser = () => {
                       <DisabledFiled data={role} name="Role"></DisabledFiled>
                       <DisabledFiled
                         data={userDetails?.user?.presentAddress}
-                        name="Present Address"
+                        name="Address"
                       ></DisabledFiled>
                       <DisabledFiled
                         data={userDetails?.user?.parmanentAddress}
