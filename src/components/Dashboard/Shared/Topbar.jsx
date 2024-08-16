@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import { getUserInfo, logOut } from "../../../service/storeUserInfo";
-import logo from "../../../assets/logo/logo.png";
+import logo from "../../../../public/loder.png";
 import {
   useCurrentUserQuery,
   useGetUserDetailsQuery,
@@ -53,7 +53,7 @@ const Topbar = ({ sidebar, setSidebar }) => {
               ? userDetails?.user?.profilePhoto
               : logo
           }
-          className="h-[40px] w-[40px] cursor-pointer border border-gray p-1"
+          className=" cursor-pointer border border-gray p-1"
           alt="Profile"
         />
         {profile && (
@@ -68,9 +68,9 @@ const Topbar = ({ sidebar, setSidebar }) => {
                       : logo
                   }
                   alt="Profile Image"
-                  className="h-[40px] w-[40px] mx-4"
+                  className=" mx-4"
                 />
-                <span>{user?.id}</span>
+                <span className=" text-[20px] font-poppins font-semibold">@{user?.username}</span>
               </li>
               <li
                 className="px-6 py-2  border-b border-gray"

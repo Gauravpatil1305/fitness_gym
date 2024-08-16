@@ -44,7 +44,7 @@ const Navbar = () => {
                 <Link
                   to={menu === "Home" ? "/" : menu.toLowerCase()}
                   key={index}
-                  className="font-roboto font-medium block px-4 py-2 mt-2 text-sm text-black hover:text-main text-xl font-light transition duration-300"
+                  className="font-roboto block px-4 py-2 mt-2  text-black hover:text-main text-xl font-light transition duration-300"
                 >
                   <li>{menu}</li>
                 </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
                   <Link
                     to={menu === "Home" ? "/" : menu.toLowerCase()}
                     key={index}
-                    className="font-roboto font-medium block px-4 py-2 mt-2 text-white hover:text-main text-xl font-light transition duration-300"
+                    className="font-roboto font-medium block px-4 py-2 mt-2 text-white hover:text-main text-xl  transition duration-300"
                   >
                     <li>{menu}</li>
                   </Link>
