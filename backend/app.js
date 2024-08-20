@@ -12,6 +12,7 @@ const port = 8450;
 const authRouter = require("./router/auth")
 const mealRouter = require("./router/meal")
 const userRouter = require("./router/user")
+const admittedStudentRouter = require("./router/admittedStudent")
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
@@ -46,6 +47,7 @@ app.get("/"),async (req, res) => {
 app.use('/api', authRouter);
 app.use('/api', mealRouter);
 app.use('/api', userRouter);
+app.use('/api', admittedStudentRouter);
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });

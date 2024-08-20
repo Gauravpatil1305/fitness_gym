@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="flex items-center ">
             {/* Menus */}
 
-            <ul className="flex  ">
+            <ul className="flex  ">f
               {menus.map((menu, index) => {
                 return (
                   <Link
