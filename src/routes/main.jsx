@@ -6,10 +6,12 @@ import { Toaster } from "react-hot-toast";
 
 const Main = () => {
   return (
-    <div>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+    <div className="app-container">
+      <Navbar />
+      <main className="content">
+        <Outlet />
+      </main>
+      <Footer />
       <Toaster />
     </div>
   );

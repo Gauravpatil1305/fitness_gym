@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../layout/main";
+import Main from "./main"; // Ensure the correct casing of 'Main.jsx'
 import Home from "../pages/Home";
-import Login from "../pages/login/Login";
+import Login from "../pages/Login/Login"; // Correct casing for 'Login'
 import SignUp from "../pages/Signup/SignUp";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
@@ -22,7 +22,7 @@ import DashboardHomePage from "../pages/Dashboard/Home";
 import UserMeal from "../pages/Dashboard/User/Meal/Meal";
 import UserPrivateRoute from "../components/PrivateRoute/UserPrivateRoute";
 import TrainerPrivateRoute from "../components/PrivateRoute/TrainerPrivateRoute";
-import Mystudents from "../pages/Dashboard/Trainer/MyStudents/Mystudents";
+import MyStudents from "../pages/Dashboard/Trainer/MyStudents/MyStudents";
 import TrainerHome from "../pages/Dashboard/Trainer/Home/Home";
 import Availability from "../pages/Dashboard/Trainer/Availability/Availability";
 import Membership from "../pages/Dashboard/User/Membership/Membership";
@@ -36,14 +36,14 @@ import NewMessages from "../pages/Dashboard/Admin/NewMessages/NewMessages";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Main />,
     children: [
       {
         path: "/",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Home></Home>
+            <ScrollToTop />
+            <Home />
           </>
         ),
       },
@@ -51,8 +51,8 @@ const router = createBrowserRouter([
         path: "/about",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <About></About>{" "}
+            <ScrollToTop />
+            <About />
           </>
         ),
       },
@@ -60,8 +60,8 @@ const router = createBrowserRouter([
         path: "/services",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Services></Services>{" "}
+            <ScrollToTop />
+            <Services />
           </>
         ),
       },
@@ -69,8 +69,8 @@ const router = createBrowserRouter([
         path: "/schedule",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Schedule></Schedule>{" "}
+            <ScrollToTop />
+            <Schedule />
           </>
         ),
       },
@@ -78,8 +78,8 @@ const router = createBrowserRouter([
         path: "/gallery",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Gallery></Gallery>{" "}
+            <ScrollToTop />
+            <Gallery />
           </>
         ),
       },
@@ -87,8 +87,8 @@ const router = createBrowserRouter([
         path: "/contact",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Contact></Contact>{" "}
+            <ScrollToTop />
+            <Contact />
           </>
         ),
       },
@@ -96,8 +96,8 @@ const router = createBrowserRouter([
         path: "/login",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <Login></Login>{" "}
+            <ScrollToTop />
+            <Login />
           </>
         ),
       },
@@ -105,8 +105,8 @@ const router = createBrowserRouter([
         path: "/signup",
         element: (
           <>
-            {" "}
-            <ScrollToTop></ScrollToTop> <SignUp></SignUp>{" "}
+            <ScrollToTop />
+            <SignUp />
           </>
         ),
       },
@@ -116,20 +116,19 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: (
       <PrivateRoute>
-        <Dashboard></Dashboard>
+        <Dashboard />
       </PrivateRoute>
     ),
     children: [
       {
         path: "/dashboard",
-        element: <DashboardHomePage></DashboardHomePage>,
+        element: <DashboardHomePage />,
       },
       {
         path: "/dashboard/admin",
         element: (
           <AdminPrivateRoute>
-            {" "}
-            <AdminHome></AdminHome>,{" "}
+            <AdminHome />
           </AdminPrivateRoute>
         ),
       },
@@ -137,7 +136,7 @@ const router = createBrowserRouter([
         path: "/dashboard/admin/members",
         element: (
           <AdminPrivateRoute>
-            <Members></Members>{" "}
+            <Members />
           </AdminPrivateRoute>
         ),
       },
@@ -145,7 +144,7 @@ const router = createBrowserRouter([
         path: "/dashboard/admin/trainers",
         element: (
           <AdminPrivateRoute>
-            <Trainers></Trainers>,{" "}
+            <Trainers />
           </AdminPrivateRoute>
         ),
       },
@@ -153,8 +152,7 @@ const router = createBrowserRouter([
         path: "/dashboard/admin/meal-plan",
         element: (
           <AdminPrivateRoute>
-            {" "}
-            <MealPlan></MealPlan>{" "}
+            <MealPlan />
           </AdminPrivateRoute>
         ),
       },
@@ -162,8 +160,7 @@ const router = createBrowserRouter([
         path: "/dashboard/admin/messages",
         element: (
           <AdminPrivateRoute>
-            {" "}
-            <NewMessages></NewMessages>
+            <NewMessages />
           </AdminPrivateRoute>
         ),
       },
@@ -171,8 +168,7 @@ const router = createBrowserRouter([
         path: "/dashboard/admin/plans",
         element: (
           <AdminPrivateRoute>
-            {" "}
-            <Plans></Plans>
+            <Plans />
           </AdminPrivateRoute>
         ),
       },
@@ -181,8 +177,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user",
         element: (
           <UserPrivateRoute>
-            {" "}
-            <UserHome></UserHome>
+            <UserHome />
           </UserPrivateRoute>
         ),
       },
@@ -190,7 +185,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/routine",
         element: (
           <UserPrivateRoute>
-            <Routine></Routine>{" "}
+            <Routine />
           </UserPrivateRoute>
         ),
       },
@@ -198,7 +193,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/meal",
         element: (
           <UserPrivateRoute>
-            <UserMeal></UserMeal>{" "}
+            <UserMeal />
           </UserPrivateRoute>
         ),
       },
@@ -206,7 +201,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/membership",
         element: (
           <UserPrivateRoute>
-            <Membership></Membership>
+            <Membership />
           </UserPrivateRoute>
         ),
       },
@@ -214,7 +209,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/trainer",
         element: (
           <UserPrivateRoute>
-            <Trainer></Trainer>
+            <Trainer />
           </UserPrivateRoute>
         ),
       },
@@ -222,7 +217,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/activity",
         element: (
           <UserPrivateRoute>
-            <Activity></Activity>
+            <Activity />
           </UserPrivateRoute>
         ),
       },
@@ -230,7 +225,7 @@ const router = createBrowserRouter([
         path: "/dashboard/user/payments",
         element: (
           <UserPrivateRoute>
-            <Payments></Payments>
+            <Payments />
           </UserPrivateRoute>
         ),
       },
@@ -239,7 +234,7 @@ const router = createBrowserRouter([
         path: "/dashboard/trainer",
         element: (
           <TrainerPrivateRoute>
-            <TrainerHome></TrainerHome>
+            <TrainerHome />
           </TrainerPrivateRoute>
         ),
       },
@@ -247,7 +242,7 @@ const router = createBrowserRouter([
         path: "/dashboard/trainer/availability",
         element: (
           <TrainerPrivateRoute>
-            <Availability></Availability>{" "}
+            <Availability />
           </TrainerPrivateRoute>
         ),
       },
@@ -255,14 +250,14 @@ const router = createBrowserRouter([
         path: "/dashboard/trainer/students",
         element: (
           <TrainerPrivateRoute>
-            <Mystudents></Mystudents>
+            <MyStudents />
           </TrainerPrivateRoute>
         ),
       },
       // Settings
       {
         path: "/dashboard/settings/:value?",
-        element: <Settings></Settings>,
+        element: <Settings />,
       },
     ],
   },
