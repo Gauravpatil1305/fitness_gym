@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "./main"; // Ensure the correct casing of 'Main.jsx'
+import Main from '../layout/main.jsx'; // or .js depending on the file
 import Home from "../pages/Home";
 import Login from "../pages/Login/Login"; // Correct casing for 'Login'
 import SignUp from "../pages/Signup/SignUp";
