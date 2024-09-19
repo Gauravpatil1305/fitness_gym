@@ -22,9 +22,9 @@ import DashboardHomePage from "../pages/Dashboard/Home";
 import UserMeal from "../pages/Dashboard/User/Meal/Meal";
 import UserPrivateRoute from "../components/PrivateRoute/UserPrivateRoute";
 import TrainerPrivateRoute from "../components/PrivateRoute/TrainerPrivateRoute";
-import MyStudents from "../pages/Dashboard/Trainer/MyStudents/MyStudents";
-import TrainerHome from "../pages/Dashboard/Trainer/Home/Home";
-import Availability from "../pages/Dashboard/Trainer/Availability/Availability";
+import Mystudents from "../pages/Dashboard/Trainer/MyStudents/Mystudents.jsx"
+import TrainerHome from "../pages/Dashboard/Trainer/Home/Home.jsx"
+import Availability from "../pages/Dashboard/Trainer/Availability/Availability.jsx"
 import Membership from "../pages/Dashboard/User/Membership/Membership";
 import Trainer from "../pages/Dashboard/User/Trainer/Trainer";
 import Activity from "../pages/Dashboard/User/Activity/Activity";
