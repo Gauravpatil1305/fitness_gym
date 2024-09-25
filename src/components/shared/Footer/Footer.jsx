@@ -20,13 +20,13 @@ const Footer = () => {
             <h2 className={footerHead}>SITEMAP</h2>
             <ul className="mt-10">
               <li className={footerList}>
-                <Link to="/about">About Us</Link>
+                <Link to="/about">About</Link>
               </li>
               <li className={footerList}>
-                <Link to="/">Privecy & policy</Link>
+                <Link to="/Gallery">Gallery</Link>
               </li>
               <li className={footerList}>
-                <Link to="/">Contact</Link>
+                <Link to="/Contact">Contact</Link>
               </li>
               <li className={footerList}>
                 <Link to="/">Home</Link>

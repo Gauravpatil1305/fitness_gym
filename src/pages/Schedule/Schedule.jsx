@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link component from React Router
 import PageHeading from "../../components/PageHeading/PageHeading";
 import SubHead from "../../components/Heading/SubHead";
 import SectionHead from "../../components/Heading/SectionHead";
@@ -8,64 +9,144 @@ const Schedule = () => {
     <div>
       <PageHeading content="Schedule" />
       <div className="bg-white pt-20 pb-10">
-        <div className="px-5 text-center ">
+        <div className="px-5 text-center">
           <div className="flex items-center justify-center">
             <div className="h-[2px] w-[100px] bg-main"></div>
             <SubHead color="main" title="Our Time Schedule" />
           </div>
           <div className="w-full lg:w-[60%] mx-auto">
-          <SectionHead
+            <SectionHead
               color="black"
               title="Select The Perfect Time You Need Now "
-            ></SectionHead>
+            />
           </div>
         </div>
+
         <div className="my-20 font-popins">
-          <ul className="bg-sky px-4 py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:px-20 gap-4">
-            <li className="px-6 py-2 text-[24px]  text-center">Suturday</li>
-            <li className="px-6 py-2 text-[24px]  text-center">Sunday</li>
-            <li className="px-6 py-2 text-[24px]  text-center">Monday</li>
-            <li className="px-6 py-2 text-[24px] bg-main text-white text-center">
-              Tuesday
-            </li>
-            <li className="px-6 py-2 text-[24px]  text-center">Wednesday</li>
-            <li className="px-6 py-2 text-[24px]  text-center">Thursday</li>
-            <li className="px-6 py-2 text-[24px]  text-center">Friday</li>
-          </ul>
-          <ul className="bg-sky px-4 py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:px-20 gap-4">
-            <li className="px-6 py-6 text-[24px]  text-center  ">
-              <div>
-                <h5 className="bg-black text-white px-4 py-2">10am-11am</h5>
-                <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Jack</p>
+          {/* Weekdays List with Alternating Layout */}
+          <ul className="bg-sky px-4 py-6 space-y-8 lg:px-20">
+            
+            {/* Saturday - Image on Left, Text on Right */}
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-2 lg:pl-6 text-center lg:text-left px-6 py-2">
+                <p>Monday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-black text-white px-4 py-2">10am-11am</h5>
+                    <h2 className="text-[30px]">Kick Boxing</h2>
+                    <p>by Jack</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-1">
+                <img
+                  src="Gym_-_Kayla_-_7108-1024x683-27c3a53.jpg"
+                  alt="Saturday Gym Image"
+                  className="mx-auto mb-2"
+                />
               </div>
             </li>
-            <li className="px-6 py-6 text-[24px]  text-center bg-main ">
-              <div className="text-white">
-                <h5 className="bg-white text-black px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Zumba Class</h2>
-                <p>by Ana de Armas</p>
+
+            {/* Sunday - Text on Left, Image on Right */}
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-1 text-center lg:text-right px-6 py-2">
+                <p>Tuesday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-white text-black px-4 py-2">8am-10am</h5>
+                    <h2 className="text-[30px]">Zumba Class</h2>
+                    <p>by Ana de Armas</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-2">
+                <img
+                  src="images.jpeg"
+                  alt="Sunday Gym Image"
+                  className="mx-auto mb-2"
+                />
               </div>
             </li>
-            <li className="px-6 py-6 text-[24px]  text-center  ">
-              <div>
-                <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Stretching</h2>
-                <p>by Gaurav</p>
+
+            {/* Monday - Image on Left, Text on Right */}
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-2 lg:pl-6 text-center lg:text-left px-6 py-2">
+                <p>Wednesday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
+                    <h2 className="text-[30px]">Stretching</h2>
+                    <p>by Gaurav</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-1">
+                <img
+                  src="190128-exercise-gym-ac-556p.jpg"
+                  alt="Monday Gym Image"
+                  className="mx-auto mb-2"
+                />
               </div>
             </li>
-            <li className="px-6 py-6 text-[24px]  text-center  ">
-              <div>
-                <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Medition</h2>
-                <p>by Ramkrishna Yadav</p>
+
+            {/* Tuesday - Text on Left, Image on Right */}
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-1 text-center lg:text-right px-6 py-2">
+                <p>Thursday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
+                    <h2 className="text-[30px]">Meditation</h2>
+                    <p>by Ramkrishna Yadav</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-2">
+                <img
+                  src="MAIN-IMAGE-RESIZED-shutterstock_499280881-1300x600.jpg"
+                  alt="Tuesday Gym Image"
+                  className="mx-auto mb-2"
+                />
               </div>
             </li>
-            <li className="px-6 py-6 text-[24px]  text-center  ">
-              <div>
-                <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
-                <h2 className="text-[30px]">Personal Training</h2>
-                <p>by John</p>
+
+            {/* Wednesday - Image on Left, Text on Right */}
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-2 lg:pl-6 text-center lg:text-left px-6 py-2">
+                <p>Friday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
+                    <h2 className="text-[30px]">Personal Training</h2>
+                    <p>by John</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-1">
+                <img
+                  src="pngtree-female-preparing-for-workout-at-the-gym-by-stretching-and-warming-up-photo-image_43337824.jpg"
+                  alt="Wednesday Gym Image"
+                  className="mx-auto mb-2"
+                />
+              </div>
+            </li>
+            <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
+              <div className="lg:order-1 text-center lg:text-right px-6 py-2">
+                <p>Saturday</p>
+                <Link to="/about">
+                  <div>
+                    <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
+                    <h2 className="text-[30px]">Meditation</h2>
+                    <p>by Ramkrishna Yadav</p>
+                  </div>
+                </Link>
+              </div>
+              <div className="lg:order-2">
+                <img
+                  src="MAIN-IMAGE-RESIZED-shutterstock_499280881-1300x600.jpg"
+                  alt="Tuesday Gym Image"
+                  className="mx-auto mb-2"
+                />
               </div>
             </li>
           </ul>

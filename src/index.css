@@ -9,3 +9,16 @@ body {
 #myVideo::-webkit-media-controls-panel {
   color: white;
 }
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  gap: 20px; /* Space between images */
+  margin-top: 20px;
+}
+
+.classes-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+}
