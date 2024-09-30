@@ -55,7 +55,7 @@ const Schedule = () => {
                   <div>
                     <h5 className="bg-white text-black px-4 py-2">8am-10am</h5>
                     <h2 className="text-[30px]">Zumba Class</h2>
-                    <p>by Ana de Armas</p>
+                    <p>by Armas</p>
                   </div>
                 </Link>
               </div>
@@ -97,7 +97,7 @@ const Schedule = () => {
                   <div>
                     <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
                     <h2 className="text-[30px]">Meditation</h2>
-                    <p>by Ramkrishna Yadav</p>
+                    <p>by Ramkrishna</p>
                   </div>
                 </Link>
               </div>
@@ -137,7 +137,7 @@ const Schedule = () => {
                   <div>
                     <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
                     <h2 className="text-[30px]">Meditation</h2>
-                    <p>by Ramkrishna Yadav</p>
+                    <p>by Krishna</p>
                   </div>
                 </Link>
               </div>

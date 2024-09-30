@@ -303,17 +303,17 @@ const Home = () => {
         </div>
         <div className="md:flex justify-around">
           <TrainnerCard
-            name="The Rock"
+            name="Nakul"
             title="Certified Fitness Coach"
             image={team1}
           ></TrainnerCard>
           <TrainnerCard
-            name="Vin Diesel"
+            name="Shubham"
             title="Strength and Conditioning Specialist"
             image={team2}
           ></TrainnerCard>
           <TrainnerCard
-            name="Tom Cruise"
+            name="Ramesh"
             title="Personal Trainer and Nutrition Expert"
             image={team3}
           ></TrainnerCard>

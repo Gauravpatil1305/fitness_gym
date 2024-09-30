@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="mx-4 my-10">
             <h2 className={footerHead}>OPEN HOUR</h2>
             <ul className="mt-10">
-              <li className={footerList}>Monda-Friday (5am-11pm & 5pm-10pm)</li>
+              <li className={footerList}>Monday-Friday (5am-11am & 5pm-10pm)</li>
               <li className={footerList}>Sunday (close)</li>
               
             </ul>
