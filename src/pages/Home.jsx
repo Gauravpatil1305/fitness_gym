@@ -35,13 +35,13 @@ const Home = () => {
       title: " Fitness Enthusiast",
     },
     {
-      name: "Prakash Patidar",
+      name: "Pranav",
       feedback:
         "I've been a member of this gym for a year, and I couldn't be happier. The cleanliness and hygiene standards are excellent, and the staff is friendly and helpful.",
       title: "Loyal Member",
     },
     {
-      name: "Mansi sharma",
+      name: "Abhaysingh",
       feedback:
         "The group fitness classes at this gym are outstanding. The instructors are passionate and energetic, and the variety of classes keeps me engaged and motivated to work out regularly. ",
       title: "Group Fitness Fanatic",

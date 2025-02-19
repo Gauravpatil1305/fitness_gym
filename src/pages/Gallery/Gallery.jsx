@@ -1,8 +1,8 @@
 import React from "react";
 import PageHeading from "../../components/PageHeading/PageHeading";
-import gellary1 from "../../assets/gallery/gallery1.png";
-import gellary2 from "../../assets/gallery/gallery2.png";
-import gellary3 from "../../assets/gallery/gallery3.png";
+import gallery1 from "../../assets/gallery/WhatsApp Image 2025-02-13 at 22.10.56_b3db3a83.jpg";
+import gallery2 from "../../assets/gallery/WhatsApp Image 2025-02-13 at 22.10.55_d971b34a.jpg";
+import galleryVideo from "../../assets/gallery/WhatsApp Video 2025-02-13 at 22.25.28_6b54085d.mp4";
 
 const Gallery = () => {
   return (
@@ -15,22 +15,24 @@ const Gallery = () => {
               <img
                 alt="gallery"
                 className="block object-cover object-center w-full h-full rounded-lg"
-                src={gellary1}
+                src={gallery1}
               />
             </div>
             <div className="w-full sm:w-1/2 p-1 md:p-2">
               <img
                 alt="gallery"
                 className="block object-cover object-center w-full h-full rounded-lg"
-                src={gellary2}
+                src={gallery2}
               />
             </div>
             <div className="w-full sm:w-full p-1 md:p-2 h-[400px]">
-              <img
-                alt="gallery"
-                className="block object-cover object-center w-full h-full rounded-lg "
-                src={gellary3}
-              />
+              <video
+                controls
+                className="block object-cover object-center w-full h-full rounded-lg"
+              >
+                <source src={galleryVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

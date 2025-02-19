@@ -20,11 +20,11 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   const allowedOrigins = [
-    "http://localhost:3000",
-    "https://apis.prabisha.com",
-    "http://localhost:3002",
-    "https://prabisha-itsm.vercel.app",
-    "https://itsm.prabisha.com",
+    // "http://localhost:3000",
+    // "https://apis.prabisha.com",
+    // "http://localhost:3002",
+    // "https://prabisha-itsm.vercel.app",
+    // "https://itsm.prabisha.com",
   ];
   const origin = req.headers.origin;
 

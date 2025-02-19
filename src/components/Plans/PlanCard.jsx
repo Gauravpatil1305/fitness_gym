@@ -52,9 +52,9 @@ const PlanCard = ({ data }) => {
               $<span className="font-bold text-main">{data?.price}</span>/month
             </span>
           </div>
-          {/* <h2 className="text-center mt-10 font-bold text-main">
+          <h2 className="text-center mt-10 font-bold text-main">
             Most Popular
-          </h2> */}
+          </h2>
         </div>
         <div className="my-6">
           <h2>Features:</h2>

@@ -7,22 +7,25 @@ const jwt = require("jsonwebtoken");
 const SECRET_KEY = "your_secret_key"; // Replace with a strong secret key
 
 const transporter = nodemailer.createTransport({
-    host: "consulting.prabisha.com",
+  
+    host: "smtp.ethereal.email",
     port: 587,
-    secure: false,
+    secure: false, // true for port 465, false for other ports
     auth: {
-      user: "info@prabisha.com",
-      pass: "ElzAeL6n",
+       user: 'marcelo.littel@ethereal.email',
+        pass: '49T2xG4NT66qdVkbKg'
     },
   });
-  
+
+
 transporter.verify((error) => {
-    if (error) {
-      console.error("Nodemailer verification failed:", error);
-    } else {
-      console.log("Nodemailer bhi ready hai!");
-    }
+  if (error) {
+    console.error('Nodemailer verification failed:', error);
+  } else {
+    console.log('Nodemailer transporter is ready');
+  }
 });
+
 
 // User Registration Endpoint
 router.post("/register", async (req, res) => {

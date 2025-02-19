@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/logo/logo.png";
+import logo from "../../../assets/logo/logo.jpg";
 import { Link } from "react-router-dom";
 import { isLoggedUser } from "../../../service/storeUserInfo";
 import Icon from "../../Buttons/Icon";
@@ -7,7 +7,7 @@ import Button from "../../Buttons/Button";
 
 const Navbar = () => {
   const isLogged = isLoggedUser();
-  // Mobile Menu State 
+  // Mobile Menu State
   const [mobileMenu, setMobileMenu] = useState(false);
   // Menus List
   const menus = [
@@ -15,16 +15,17 @@ const Navbar = () => {
     "About",
     "Services",
     "Schedule",
-    "Gallery", 
+    "Gallery",
     "Contact",
   ];
 
   return (
     <div className="bg-[#00000080] py-4 fixed top-0 z-50 w-full">
       {/* Mobile Menu */}
-      <div className="flex items-center justify-between mx-2 sm:mx-6 md:mx-10  lg:hidden ">
+      <div className="flex items-center justify-between mx-2 sm:mx-6 md:mx-10 lg:hidden">
         <Link to="/">
-          <img src={logo} alt="Fitness Logo" />
+          {/* Adjusted logo size for mobile */}
+          <img src={logo} alt="Fitness Logo" className="w-12 h-12 rounded-full" />
         </Link>
         <div className="mx-4">
           {mobileMenu ? (
@@ -44,13 +45,13 @@ const Navbar = () => {
                 <Link
                   to={menu === "Home" ? "/" : menu.toLowerCase()}
                   key={index}
-                  className="font-roboto block px-4 py-2 mt-2  text-black hover:text-main text-xl font-light transition duration-300"
+                  className="font-roboto block px-4 py-2 mt-2 text-black hover:text-main text-xl font-light transition duration-300"
                 >
                   <li>{menu}</li>
                 </Link>
               );
             })}
-            <li className="block px-4  mt-2 text-white hover:text-main text-xl font-light transition duration-300  ">
+            <li className="block px-4 mt-2 text-white hover:text-main text-xl font-light transition duration-300">
               {isLogged ? (
                 <button className="mx-2 h-full">
                   <Link to="/dashboard">
@@ -79,29 +80,32 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {/* Desktop Menu */}
-      <div className="hidden lg:block ">
-        <div className="flex items-center justify-between lg:mx-10 xl:mx-20  ">
+      <div className="hidden lg:block">
+        <div className="flex items-center justify-between lg:mx-10 xl:mx-20">
           <div>
-            <Link to="/">
-              <img src={logo} alt="Fitness Logo" />
-            </Link>
+          <Link to="/">
+  <img
+    src={logo}
+    alt="Fitness Logo"
+    className="w-[120px] h-auto object-contain rounded-full"
+  />
+</Link>
           </div>
-          <div className="flex items-center ">
+          <div className="flex items-center">
             {/* Menus */}
-
-            <ul className="flex  ">f
+            <ul className="flex">
               {menus.map((menu, index) => {
                 return (
                   <Link
                     to={menu === "Home" ? "/" : menu.toLowerCase()}
                     key={index}
-                    className="font-roboto font-medium block px-4 py-2 mt-2 text-white hover:text-main text-xl  transition duration-300"
+                    className="font-roboto font-medium block px-4 py-2 mt-2 text-white hover:text-main text-xl transition duration-300"
                   >
                     <li>{menu}</li>
                   </Link>
                 );
               })}
-              <li className="block px-4  mt-2 text-white hover:text-main text-xl font-light transition duration-300  ">
+              <li className="block px-4 mt-2 text-white hover:text-main text-xl font-light transition duration-300">
                 {isLogged ? (
                   <button className="mx-2 h-full">
                     <Link to="/dashboard">

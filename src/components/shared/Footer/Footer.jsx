@@ -1,6 +1,6 @@
 import React from "react";
 import footerImage from "../../../assets/footer/footer.png";
-import footerLogo from "../../../assets/logo/logo2_footer.png";
+import footerLogo from "../../../assets/logo/logo.jpg";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -51,34 +51,34 @@ const Footer = () => {
           </div>
           <div className="mx-4 my-10">
             <img src={footerLogo} alt="" />
-            <p className="font-[14px] text-gray my-10">
+            <p className="font-[10px] text-gray my-10">
               {" "}
-              Fitness for Everyone – Experience the Difference at [Fitness Club]
+              Fitness for Everyone – Experience the Difference at [Pro Fitness]
             </p>
             <div className="flex  space-x-4">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.instagram.com/profitnessshegaon?igsh=YTB6YnB2bzhrYmRv"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaFacebookF className="text-gray text-[1.3rem] hover:text-main" />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.instagram.com/profitnessshegaon?igsh=YTB6YnB2bzhrYmRv"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaXTwitter className="text-gray text-[1.3rem] hover:text-main" />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.instagram.com/profitnessshegaon?igsh=YTB6YnB2bzhrYmRv"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaInstagram className="text-gray text-[1.3rem] hover:text-main" />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.instagram.com/profitnessshegaon?igsh=YTB6YnB2bzhrYmRv"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
         <div className="my-10  border-t-2 border-gray">
           <p className="text-gray text-center p-4">
-          Copyright © 2024 Prabisha Consulting Limited. All Rights Reserved
+          Copyright © 2024 Gaurav Patil. All Rights Reserved
           </p>
         </div>
       </div>
