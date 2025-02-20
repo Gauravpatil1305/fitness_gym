@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "./main"; // Ensure the correct casing of 'Main.jsx'
+import Main from '../layout/main.jsx'; // or .js depending on the file
 import Home from "../pages/Home";
-import Login from "../pages/Login/Login"; // Correct casing for 'Login'
+import Login from '../pages/login/Login.jsx'
 import SignUp from "../pages/Signup/SignUp";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
@@ -22,9 +22,9 @@ import DashboardHomePage from "../pages/Dashboard/Home";
 import UserMeal from "../pages/Dashboard/User/Meal/Meal";
 import UserPrivateRoute from "../components/PrivateRoute/UserPrivateRoute";
 import TrainerPrivateRoute from "../components/PrivateRoute/TrainerPrivateRoute";
-import MyStudents from "../pages/Dashboard/Trainer/MyStudents/MyStudents";
-import TrainerHome from "../pages/Dashboard/Trainer/Home/Home";
-import Availability from "../pages/Dashboard/Trainer/Availability/Availability";
+import MyStudents from "../pages/Dashboard/Trainer/MyStudents/Mystudents.jsx"
+import TrainerHome from "../pages/Dashboard/Trainer/Home/Home.jsx"
+import Availability from "../pages/Dashboard/Trainer/Availability/Availability.jsx"
 import Membership from "../pages/Dashboard/User/Membership/Membership";
 import Trainer from "../pages/Dashboard/User/Trainer/Trainer";
 import Activity from "../pages/Dashboard/User/Activity/Activity";
