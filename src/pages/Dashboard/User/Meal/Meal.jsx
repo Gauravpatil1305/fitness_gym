@@ -41,50 +41,50 @@ const UserMeal = () => {
     fetchUser();
   }, []);
 
-  // const handleAddMeal = async (e) => {
-  //   e.preventDefault();
+  const handleAddMeal = async (e) => {
+    e.preventDefault();
 
-  //   if (!user || !user.user_id) {
-  //     console.error("User information is not available.");
-  //     return;
-  //   }
+    if (!user || !user.user_id) {
+      console.error("User information is not available.");
+      return;
+    }
 
-  //   setIsCreating(true);
+    setIsCreating(true);
 
-  //   try {
-  //     const meal = {
-  //       userId: user.user_id,
-  //       mealTitle,
-  //       mealDuration,
-  //       createdAt: new Date().toISOString(),
-  //     };
+    try {
+      const meal = {
+        userId: user.user_id,
+        mealTitle,
+        mealDuration,
+        createdAt: new Date().toISOString(),
+      };
 
-  //     const response = await axios.post(`${PORT}/api/meal`, meal, {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
+      const response = await axios.post(`${PORT}/api/meal`, meal, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-  //     if (response.status === 201 && response.data.success) {
-  //       await fetchMealData(user);
-  //       setMealTitle("");
-  //       setMealDuration("");
-  //       setFormVisible(false); // Hide the form after successful submission
-  //     } else {
-  //       throw new Error("Failed to create meal");
-  //     }
-  //   } catch (error) {
-  //     console.error("Failed to create meal", error);
-  //   } finally {
-  //     setIsCreating(false);
-  //   }
-  // };
+      if (response.status === 201 && response.data.success) {
+        await fetchMealData(user);
+        setMealTitle("");
+        setMealDuration("");
+        setFormVisible(false); // Hide the form after successful submission
+      } else {
+        throw new Error("Failed to create meal");
+      }
+    } catch (error) {
+      console.error("Failed to create meal", error);
+    } finally {
+      setIsCreating(false);
+    }
+  };
 
   return (
     <div>
       <PageHead title="Meal" />
       <div className=" rounded-xl p-4 bg-white">
-        {/* <button
+        <button
           onClick={() => setFormVisible(!formVisible)}
           className="flex items-center bg-blue text-white px-2 py-3 rounded-md hover:bg-blue/80 mb-4 transition duration-300"
         >
@@ -124,7 +124,7 @@ const UserMeal = () => {
               {isCreating ? "Adding..." : <><FaPlus className="mr-2" /> Add Meal</>}
             </button>
           </form>
-        )} */}
+        )}
 
         {mealData.length > 0 && (
           <Table

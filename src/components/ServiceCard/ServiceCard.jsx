@@ -3,18 +3,17 @@ import Icon from "../Buttons/Icon";
 
 const ServiceCard = ({ icon, title, description, path, content, status }) => {
   return (
-    <div className="bg-sky group text-center  my-10 p-10 mx-4 relative max-w-sm mx-auto ">
+    <div className="bg-sky group text-center my-10 p-10 mx-auto relative max-w-sm">
       <div
-        className={` text-gray  group-hover:text-main my-4 ${
+        className={` text-gray group-hover:text-main my-4 ${
           status ? "text-orange" : ""
         }`}
       >
         <i
-          className={`${icon} text-gray text-[40px]  group-hover:text-main my-4 ${
+          className={`${icon} text-gray text-[40px] group-hover:text-main my-4 ${
             status ? "text-orange" : ""
           } `}
         ></i>
-        ;
       </div>
       <div className="my-6">
         <Link className="uppercase text-large font-semibold " to="/services">

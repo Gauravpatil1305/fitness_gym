@@ -70,7 +70,7 @@ const Contact = () => {
 
             <div className="leading-none mx-4 my-8">
               <h3 className="text-xl">Shegaon Maharastra.</h3>
-              <p className="text-[#8a8a8a]">Aanand Vihar, wing 8 floor first</p>
+              <p className="text-[#8a8a8a]">Near Sainik Colony Board,Jagdamba Nagar</p>
             </div>
           </div>
           <div className="flex flex-col items-start">
@@ -78,7 +78,8 @@ const Contact = () => {
     <Icon IconName="fa-solid fa-phone" color="gray" size="xl" />
     <div className="leading-none mx-4">
       <a href="tel:+917499511318">
-        <h3 className="text-xl">+91 7499511318</h3>
+        <h3 className="text-xl">+91 8668484339 
+        </h3>
       </a>
       <p className="text-[#8a8a8a]">Mon to sat 9am to 6pm</p><br></br>
     </div>
@@ -87,7 +88,8 @@ const Contact = () => {
     <Icon IconName="fa-solid fa-envelope" color="gray" size="xl" />
     <div className="leading-none mx-4">
       <a href="mailto:fitnessclub@gmail.com">
-        <h3 className="text-xl">fitnessclub@gmail.com</h3>
+        <h3 className="text-xl">shegaonprofitness@gmail.com
+        </h3>
       </a>
       <p className="text-[#8a8a8a]">Send us your query anytime!</p>
     </div>
