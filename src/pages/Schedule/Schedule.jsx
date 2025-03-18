@@ -29,12 +29,12 @@ const Schedule = () => {
             {/* Saturday - Image on Left, Text on Right */}
             <li className="grid grid-cols-1 lg:grid-cols-2 items-center text-[24px] hover:bg-main hover:text-white transition duration-300">
               <div className="lg:order-2 lg:pl-6 text-center lg:text-left px-6 py-2">
-                <p>Monday</p>
+                <p>Monday To Saturday</p>
                 <Link to="/about">
                   <div>
-                    <h5 className="bg-black text-white px-4 py-2">10am-11am</h5>
-                    <h2 className="text-[30px]">Kick Boxing</h2>
-                    <p>by Jack</p>
+                    <h5 className="bg-black text-white px-4 py-2">4pm-6pm</h5>
+                    <h2 className="text-[30px]">Ledies Batch</h2>
+                    <p>by Pradum</p>
                   </div>
                 </Link>
               </div>
